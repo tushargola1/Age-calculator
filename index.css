@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+}
+
+.container {
+  padding: 4vw 5vw;
+}
+
+main {
+  border-radius: 1.67vw;
+  background-color: #ffffff;
+  border-bottom-right-radius: 12vw;
+
+}
+
+form {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 1.33vw;
+}
+
+label {
+  font-weight: bold;
+  color: var(--Smokey-grey);
+  letter-spacing: 0.1vw;
+  margin-bottom: 0.67vw;
+}
+
+.label-error {
+  color: var(--Light-red);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column; 
+}
+
+.text-input {
+  width: 13.33vw;
+  height: 5.83vw;
+  border: 0.08vw solid var(--Light-grey);
+  border-radius: 1.67vw;
+  padding-left: 2.08vw;
+  font-size: 2vw;
+  font-weight: 800;
+  color: var(--Off-black);
+}
+.text-input:focus {
+  outline: 0.08vw solid var(--Purple);
+}
+
+.input-error {
+  border: 1px solid var(--Light-red);
+}
+.input-error:focus {
+  outline: 1px solid var(--Light-red);
+}
+
+form > img {
+  background-color: var(--Purple);
+  position: relative;
+  top: 7.4vw;
+  left: 4.17vw;
+  border-radius: 50%;
+  padding: 2.08vw;
+  width: 8.33vw;
+  height: 8.33vw;
+  cursor: pointer;
+}
+
+form > img:hover {
+  color: var(--White);
+  background-color: var(--Off-black);
+}
+
+.hr {
+  border: 0.08vw solid var(--Light-grey);
+  margin-bottom: 3.75vw;
+}
+
+.error {
+  color: var(--Light-red);
+}
+
+.error-message {
+  margin-top: 0.83vw;
+  font-size: 0.9vw;
+  font-style: italic;
+  color: var(--Light-red);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.age-indicator-row {
+  line-height: 1.1;
+}
+
+.age-indicator-row > span {
+  font-size: 5vw;
+  font-weight: 900;
+  font-style: italic;
+}
+
+#years,
+#months,
+#days {
+  color: var(--Purple);
+  letter-spacing: 1.25vw;
+}
+
+.attribution{
+  position: absolute;
+  bottom: 0;
+  font-size: 0.83vw;
+}
+
+@media screen and (max-width:375px){
+ .input-container label{
+  font-size: 0.5rem;
+ } 
+ form > img {
+  background-color: var(--Purple);
+  position: relative;
+  top: 9vw;
+  left: 4.17vw;
+
+}
+}
