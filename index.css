@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0, 0%, 94%);
+  background-color: black;
   font-family: "Poppins", sans-serif;
   flex-direction: column;
 }
